@@ -21,7 +21,7 @@ GameManager.prototype.setup = function () {
   this.grid         = new Grid(this.size);
   this.grid.addStartTiles();
 
-  
+  this.ai           = new AI(this.grid, 3);
   this.score        = 0;
   this.over         = false;
   this.won          = false;
