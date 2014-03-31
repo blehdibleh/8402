@@ -570,7 +570,7 @@ Grid.prototype.isWin = function() {
     for (var y=0; y<4; y++) {
       if (self.cellOccupied(this.indexes[x][y])) {
         if (self.cellContent(this.indexes[x][y]).value == 512) {
-          return true;
+          return false;
         }
       }
     }
