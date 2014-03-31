@@ -569,7 +569,7 @@ Grid.prototype.valueSum = function() {
  -  for (var x=0; x<4; x++) {
  -    for (var y=0; y<4; y++) {
  -      if (self.cellOccupied(this.indexes[x][y])) {
- -        if (self.cellContent(this.indexes[x][y]).value == 512) {
+ -        if (self.cellContent(this.indexes[x][y]).value == 2048) {
  -          return true;
  -        }
  -      }
