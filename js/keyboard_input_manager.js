@@ -43,8 +43,8 @@ KeyboardInputManager.prototype.listen = function () {
 	    };
 	};
 
-	cells[n].addEventListener("click", f(n,2), true);
-	cells[n].addEventListener("contextmenu", f(n,4), true);
+	cells[n].addEventListener("click", f(n,4), true);
+	cells[n].addEventListener("contextmenu", f(n,2), true);
     }
 };
 
