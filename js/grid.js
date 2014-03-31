@@ -204,7 +204,7 @@ Grid.prototype.move = function (direction) {
           score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) {
+          if (merged.value === 512) {
             won = true;
           }
         } else {
@@ -569,7 +569,7 @@ Grid.prototype.isWin = function() {
   for (var x=0; x<4; x++) {
     for (var y=0; y<4; y++) {
       if (self.cellOccupied(this.indexes[x][y])) {
-        if (self.cellContent(this.indexes[x][y]).value == 2048) {
+        if (self.cellContent(this.indexes[x][y]).value == 512) {
           return true;
         }
       }
